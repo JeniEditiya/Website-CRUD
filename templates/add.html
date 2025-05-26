@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Tambah Item</h2>
+<form method="POST">
+    <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="Nama Item" required>
+    </div>
+    <button type="submit" class="btn btn-success">Simpan</button>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Kembali</a>
+</form>
+{% endblock %}
