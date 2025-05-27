@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Edit Item</h2>
+<form method="POST">
+    <div class="mb-3">
+        <input type="text" name="name" value="{{ item.name }}" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Kembali</a>
+</form>
+{% endblock %}

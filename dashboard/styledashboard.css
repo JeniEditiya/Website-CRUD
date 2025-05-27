@@ -1,0 +1,84 @@
+/* Reset dan Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4cccc;
+  color: #ffffff;
+}
+
+/* Navigasi */
+nav {
+  background-color: #c47373;
+  padding: 1em;
+  display: flex;
+  gap: 1em;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+  color: #e13bac;
+}
+
+/* Main Section */
+main {
+  padding: 2em;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 1.5em;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+}
+
+/* Individual Card */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(45, 29, 29, 0.1);
+  padding: 1.5em;
+  width: 250px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #f9d1d1;
+}
+
+.card p {
+  font-size: 1.1em;
+  margin: 0.5em 0;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 1em;
+  text-decoration: none;
+  color: white;
+  background-color: #e69999;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.card a:hover {
+  background-color: #f97db7;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
